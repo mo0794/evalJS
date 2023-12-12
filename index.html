@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header>
+        <div id="headerLeft">
+            <img src="./img/apiLogo.svg" alt="logo API" id="logo">
+            <div id="name">Name</div>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="">Home</a>
+            <a href="">Portfolio</a>
+            <a href="">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div class="cartes">
+                <img id="photo_user" src="" alt="random user" >
+                <h1>Hello, je suis <span id="user_name"></span></h1>
+                <p>Je suis <span id="job"></span> Web, je suis <span id="based"></span> à <span id="city"></span>, <span id="country"></span> et j'ai <span id="age"></span> ans.
+                    Je suis BackEnd freelance avec une spécialisation dans les API REST.
+                    
+                    J'aime Voyager et écouter de la musique. J'ai eu la chance de visiter certains pays tels que la Belgique, l'Espagne, l'Angleterre, la Pologne et Malte. Grâce à ces expériences de voyages, j'ai pu découvrir et apprendre de nouvelles cultures et enrichir mes compétences en langue étrangère (comme l'anglais et l'espagnol).
+                    
+                    J'ai aussi pu acquérir de nouvelles compétences liées aux bonnes pratiques et aux savoir-faire professionnels indispensables dans le métier de développeur web (gestion de projets, versioning, ...).
+                    
+                    Je possède également des compétences d'administration réseau, d'admininistration système Linux et quelques notions DevOps (Docker, Gitlab CI, ...). Libriste et linuxien, j'aime les temps conviviaux des install parties.
+                    
+                    J'aime exercer mon métier dans un environnement me permettant de partager mes compétences avec celles d'une équipe.</p>
+            </div>
+        </div>
+        <div>
+            <div class="cartes">
+                <h2>Compétences:</h2>
+                <ul> Frameworks PHP:
+                    <li>Symfony</li>
+                    <li>Laravel</li>
+                    <li>Phalcon</li>
+                </ul>
+                <ul> Bases de données:
+                    <li>MySql</li>
+                    <li>PostgreSql</li>
+                    <li>Sqlite</li>
+                </ul>
+                <ul> IDE full API:
+                    <li>Postman</li>
+                    <li>Insomnia</li>
+                    <li>HTTPie</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="cartes">
+                <h2>Avis clients:</h2>
+                <div id="avisUser1">
+                    <img src="./img/Star1Solid.svg" alt="star"></div>
+                <div id="avisUser2"> 
+                    <img src="./img/Star1Solid.svg" alt="star"></div>
+                <div id="avisUser3"> 
+                    <img src="./img/Star1Solid.svg" alt="star"></div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div>Contact: ☎
+            <div id="tel"></div>
+            <div id="mail"></div>
+        </div>
+        <button id="btn" onclick="getRandomUser()">Btn</button>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
